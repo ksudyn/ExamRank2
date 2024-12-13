@@ -6,7 +6,7 @@
 /*   By: ksudyn <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 14:15:36 by ksudyn            #+#    #+#             */
-/*   Updated: 2024/12/13 14:15:38 by ksudyn           ###   ########.fr       */
+/*   Updated: 2024/12/13 18:48:54 by ksudyn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int main(int argc, char **argv)
         return (0);
     }
 
-    int i = 2;
+    int i = 1;
     int number = atoi(argv[1]);
 
-    while (number >= i)
+    while (number >= ++i)
     {
         if(number % i == 0)
         {
@@ -37,9 +37,8 @@ int main(int argc, char **argv)
             }
             printf("*");
             number = number / i;
-            i = 2;
+            i = 1;
         }
-        i++;
     }
     write(1, "\n", 1);
     return (0);
