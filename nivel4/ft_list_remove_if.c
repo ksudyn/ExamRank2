@@ -18,7 +18,7 @@ typedef struct      s_list
 
 void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 {
-    if(!begin_list || ! *begin_list)
+    if(!begin_list || !*begin_list)
     {
         return;
     }
@@ -33,7 +33,6 @@ void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 	}
 	else
 	{
-		cont = *begin_list;
 		ft_list_remove_if(&cont->next, data_ref, cmp);
 	}
 }
