@@ -64,10 +64,16 @@ int main(int argc, char **argv)
     while(num > 0)
     {
         if(is_prime(num))
-        result = result + num;
+            result = result + num;
         num--;
     }
     put_nbr(result);
     write(1, "\n", 1);
     return (0);
 }
+//este programa suma los numeros primos que conforman un numero
+//aqui en el main se convierte num en un numero para trabajrr con el
+//se crea result que al principio es 0
+//si num es mayor que 0 entra en el bucle y con is_prime compruebo si el numero es un primo o no
+//si el numero es primo lo suma a result y si no reduce en uno el numero hasta llegar a 0
+//al final put_nbr imprime result en la salida estándar 
