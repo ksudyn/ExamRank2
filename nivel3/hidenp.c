@@ -45,3 +45,7 @@ int main(int argc, char **argv)
     write(1, "\n", 1);
     return (0);
 }
+//El programa recorre argv[2] buscando los caracteres de argv[1] en orden.
+//si son iguales se avanza en argv[1] con la i, si no se avanza en argv[2] con j
+//Si todos los caracteres de argv[1] se encuentran en argv[2] y se llega al NULL, imprime 1.
+//Si no, imprime 0.
