@@ -24,7 +24,6 @@ int ft_atoi(char *str)
     {
         i++;
     }
-
     // Paso 2: Verificar si hay un signo '+' o '-'
     if (str[i] == '-')
     {
@@ -35,7 +34,6 @@ int ft_atoi(char *str)
     {
         i++;
     }
-
     // Paso 3: Convertir los caracteres numéricos en un número entero
     while (str[i] >= '0' && str[i] <= '9')
     {

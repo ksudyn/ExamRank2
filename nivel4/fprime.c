@@ -43,3 +43,13 @@ int main(int argc, char **argv)
     write(1, "\n", 1);
     return (0);
 }
+//esta funcion toma un número entero positivo
+//y muestra sus factores primos en la salida estándar, seguido de un salto de línea.
+//Los factores deben mostrarse en orden ascendente y separados por '*'
+//de manera que la expresión en la salida dé el resultado correcto
+//convierto el numero recibido con atoi
+//el numero primo a comprobar si es valido empieza en 1, si el resto es 0 es divisible
+//por lo que entra y ese numero primo se imprime
+//si los numero a comprobar son iguales hemos terminado
+//si no se escribe * y se dividen los numeros para comprobarlo de nuevo.
+//y se restablece i en 1 antes de empezar para que no de mal el resultado.

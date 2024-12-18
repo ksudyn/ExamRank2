@@ -42,5 +42,6 @@ void sort_int_tab(int *tab, unsigned int size)
 //tab: es el arreglo que estamos ordenando. Por ejemplo [5, 2, 8, 1, 4].
 //size: es el tamaño del arreglo, en este caso, 5 porque hay 5 elementos en el arreglo
 // j es la posicion de los elementos del arreglo
-//swapped es el numero de cmabios realizados, si no se ha hecho cambios esta todo ordenado
+//swapped es el numero de cambios realizados, si no se ha hecho cambios esta todo ordenado
 //i indica cuántas veces hemos recorrido el arreglo
+//em el while se entra solo si i < size -1 porque i empieza desde 0 size desde 1

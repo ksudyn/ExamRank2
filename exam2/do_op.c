@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>//para printf
+#include <stdlib.h>//para atoi
 
 int main(int argc, char *argv[])
 {

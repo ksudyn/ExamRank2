@@ -29,3 +29,5 @@ size_t  ft_strcspn(const char *s, const char *reject)
     }
     return (i);
 }
+//strcspn devuelve el número de caracteres desde el principio de la cadena s
+//hasta el primer carácter que coincida con alguno de los caracteres en la cadena reject

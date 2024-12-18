@@ -39,3 +39,9 @@ int main(int argc, char **argv)
     write (1, "\n", 1);
     return (0);
 }
+//Escribe un programa que tome una sola cadena en formato lowerCamelCase
+//y la convierta en una cadena en formato snake_case.
+//Una cadena en formato lowerCamelCase es una cadena donde cada palabra comienza con una letra mayúscula,
+//excepto la primera.
+//Una cadena en formato snake_case es una cadena donde cada palabra está en minúsculas,
+//separada por un guion bajo "_"
