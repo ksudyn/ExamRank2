@@ -22,12 +22,16 @@ void last_word(char *str)
         i++;
     }
     i--;
-    while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+    while (str[i] == ' ' || (str[i] == '\t' && str[i] == '\0'))
     {
         i--;
     }
+    while(str[i] == 0)
+    {
+      return;  
+    }
     end = i;
-    while (str[i] != 32 && (str[i] < 9 || str[i] > 13))
+    while (str[i] != ' ' && (str[i] != '\t' || str[i] != '\0'))
     {
         i--;
     }

@@ -14,3 +14,9 @@ unsigned char swap_bits(unsigned char octet)
 {
 	return ((octet >> 4) | (octet << 4));
 }
+//lo que hace es intercambu¡iatr los bits en bloques de 4 
+// este [ 1011 0010 ]
+//lo convierte en este [ 0010 1011 ]
+//La operación se realiza comparando cada bit correspondiente de los dos operandos usando |
+//Si al menos uno de los bits es 1, el resultado es 1.
+//Si ambos bits son 0, el resultado es 0
