@@ -13,7 +13,7 @@
 char *ft_strrev(char *str)
 {
     int i = 0;
-    int j;
+    int j = 0;
     char temporary;
 
     // Comprobar si la cadena no es nula
@@ -24,15 +24,15 @@ char *ft_strrev(char *str)
     while (str[i])
         i++;
 
-    // Ajustar el índice de j al último carácter válido (no el '\0')
-    j = i - 1;
+     // Ajustamos i para que apunte al último carácter válido
+    i--;
 
     // Invertir la cadena copiando desde el final hacia el principio
     while (i > j)
     {
-        temporary = str[j];
-        str[j] = str[i];
-        str[i] = temporary;
+        temporary = str[i];   // Tomamos el carácter en la posición i
+        str[i] = str[j];      // Ponemos el carácter en la posición j
+        str[j] = temporary;   // Colocamos el carácter temporal en la posición j
         i--;
         j++;
     }
@@ -40,4 +40,9 @@ char *ft_strrev(char *str)
     return str;
 }
 //es un swap caracter por caracter
-
+// en el ejemlo "Hola Mundo".
+//Al ejecutar la función, el contenido de la cadena se invierte.
+//Los caracteres se intercambian de manera que:
+//H (en la posición 0) se intercambia con o (en la última posición).
+//o se intercambia con d, y así sucesivamente.
+//El resultado es "odnuM aloH"

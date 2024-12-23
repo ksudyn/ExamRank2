@@ -16,13 +16,12 @@
 char *ft_strpbrk(const char *s1, const char *s2)
 {
 	int i = 0;
-    int j = 0;
 	
 	if (!s1 || !s2)
 		return (0);
 	while(s1[i])
 	{
-		j = 0;
+		int j = 0;
 	   	while(s2[j])
 		{
 			if(s1[i] == s2[j])
@@ -33,6 +32,10 @@ char *ft_strpbrk(const char *s1, const char *s2)
 	}
 	return (NULL);
 }
-//busca el primer carácter de s1 que esté presente en s2.
-//si lo encuentra devuelve un puntero a ese carácter
-//si no devuelve NULL
+//La función ft_strpbrk recibe dos cadenas de caracteres (s1 y s2)
+//y devuelve la primera aparición de cualquier carácter de s2 dentro de s1
+//Si no se encuentra ninguna coincidencia, devuelve NULL
+//se utiliza char * porque se pide un retorno de puntero
+//s1 es un puntero a la primera posición de la cadena.
+//Cuando haces s1 + i, estás desplazándote i posiciones hacia adelante en la cadena s1.
+//Es decir, s1 + i apunta a la dirección de memoria del carácter s1[i] en la cadena.

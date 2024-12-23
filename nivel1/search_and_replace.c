@@ -14,7 +14,7 @@ void search_and_replace(char *str, char l, char k)
     }
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     if (argc != 4)
     {

@@ -35,3 +35,8 @@ int main(int argc, char **argv)
     write(1, "\n", 1);
     return(0);
 }
+//es contarrio que el camel_to_snake, donde desaparece '_' 
+//y convertimos en mayuscula la primera letar de la palbra qie va despues de '_'
+//dentro del while recorremos el primer argumento y si encontramaos'_', lo saltamos con un 'i++'
+//despues de eso empieza la palabra y esa letra se hace mayuscula restandole '32' por el codigo 'ASCCI'
+// se escribe el caracter y se pasa al siguiente hasta que 'i' llegue a '\0'

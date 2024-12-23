@@ -32,6 +32,8 @@ char	*ft_strdup(char *src)
 	}
 	return (strcpy);
 }
-//rea una nueva cadena que es una copia exacta de la cadena original.
+//crea una nueva cadena que es una copia exacta de la cadena original.
 //La nueva cadena es dinámicamente asignada en memoria,
-//lo que significa que el espacio de memoria para ella es reservado por la función 
+//lo que significa que el espacio de memoria para ella es reservado por la función
+//se crea una nueva direccion de memoria y se reserva memoria suficiente para guardar el contenido de 'src'
+// y luego es un ft_strcpy

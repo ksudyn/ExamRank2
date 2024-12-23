@@ -42,9 +42,14 @@ void last_word(char *str)
         write(1,&str[start],1);
         start++;
     }
-
 }
-
+//aqui se escribe la ultima palabra de la cadena de texto
+//se recorre todo el argumento y al llegar al final se pasa al siguiente bucle
+//en el siguiente bucle si hay espacios se saltan hasta llegar a algo diferente
+//al encontrar ese caracter sse guarda en la variable end y se sigue reduciendo hasta llegar a un esapcio
+//en ese momento de llegar a un espacio se suma 1 y se guarda la posicion de start
+//con otro bucle se comprueba si start es menos o igual de end, que son posiciones de la cadena de texto
+//entoces desde la posicion start se escribe su caracter y se suma hasta sobrepasar end
 int main (int argc,char **argv)
 {
     if(argc != 2)
