@@ -12,17 +12,17 @@
 
 int is_power_of_2(unsigned int n)
 {
-    // Si el número es 0, no es una potencia de 2
     if (n == 0)
         return 0;
 
-    // Verificamos si el número tiene exactamente un solo bit en 1
-    // Esto se hace con la operación (n & (n - 1)).
-    // Si el número es una potencia de 2, el resultado será 0.
     if ((n & (n - 1)) == 0)
         return 1;  // Es una potencia de 2
 
-    // Si no cumple la condición, no es una potencia de 2
     return 0;
 }
+// Si el número es 0, no es una potencia de 2
+// Verificamos si el número tiene exactamente un solo bit en 1
+// Esto se hace con la operación (n & (n - 1)).
+// Si el número es una potencia de 2, el resultado será 0.
+// Si no cumple la condición, no es una potencia de 2
 

@@ -31,9 +31,9 @@ int main(int argc, char **argv)
             if(argv[1][i] == argv[2][j])
             {
                if (!seen[(unsigned char)argv[1][i]])  // Si el carácter no ha sido impreso
-               {
-                write(1, &argv[1][i], 1);  // Imprime el carácter
-                seen[(unsigned char)argv[1][i]] = 1;  // Marca el carácter como impreso
+                {
+                    write(1, &argv[1][i], 1);  // Imprime el carácter
+                    seen[(unsigned char)argv[1][i]] = 1;  // Marca el carácter como impreso
                 }
                 break;
             }
