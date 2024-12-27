@@ -25,4 +25,4 @@ int is_power_of_2(unsigned int n)
 // Esto se hace con la operación (n & (n - 1)).
 // Si el número es una potencia de 2, el resultado será 0.
 // Si no cumple la condición, no es una potencia de 2
-
+//COMPROBADO

@@ -12,38 +12,43 @@
 
 int ft_atoi_base(const char *str, int str_base)
 {
-    if (str_base < 2 || str_base > 16)
-        return 0;
     int result = 0;
     int sign = 1;
     int i = 0;
-    
+    int value;
+
+    // Manejo del signo
     if (str[i] == '-')
     {
         sign = -1;
         i++;
     }
 
-    while (str[i] != '\0')
+    // Recorremos la cadena
+    while (str[i])
     {
-        char c = str[i];
-        int value = 0;
-
-        if (c >= '0' && c <= '9')
-            value = c - '0';
-        else if (c >= 'a' && c <= 'f')
-            value = c - 'a' + 10;
-        else if (c >= 'A' && c <= 'F')
-            value = c - 'A' + 10; 
+        // Obtener el valor del carácter actual
+        if (str[i] >= '0' && str[i] <= '9')
+            value = str[i] - '0';
+        else if (str[i] >= 'a' && str[i] <= 'f')
+            value = str[i] - 'a' + 10;
+        else if (str[i] >= 'A' && str[i] <= 'F')
+            value = str[i] - 'A' + 10;
         else
-            return 0;
+            break; // Si encontramos un carácter no válido, detenemos el procesamiento
 
+        // Verificamos que el valor del carácter sea válido para la base
         if (value >= str_base)
-            return 0;
+            break; // Si el valor excede la base, detenemos el procesamiento
+
+        // Actualizamos el resultado
         result = result * str_base + value;
+
+        // Avanzamos al siguiente carácter
         i++;
     }
 
+    // Retornamos el resultado con el signo adecuado
     return result * sign;
 }
 //La función convierte una cadena de caracteres que representa un número 
@@ -59,3 +64,4 @@ int ft_atoi_base(const char *str, int str_base)
 //multiplicando el valor acumulado por la base y sumando el valor del carácter actual.
 //avanza al siguiente carácter de la cadena.
 // y al final multiplica el result final por el signo.
+//CORREGIDO Y COMPROBADO

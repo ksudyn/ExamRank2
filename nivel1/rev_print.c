@@ -7,6 +7,12 @@ char	*rev_print(char *str)
 	int		j = 0;
 	char	*new_string;
 
+		if (!str || str[0] == '\0')
+	{
+		write(1, "\n", 1);
+		return (NULL);
+	}
+
 	while (str[i])
 		i++;
 	
@@ -35,3 +41,4 @@ int main(void)
   rev_print("tnirp esreveR");
   rev_print("");
 }
+//REVISAR Y CORREGIR

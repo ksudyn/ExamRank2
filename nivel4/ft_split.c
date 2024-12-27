@@ -78,3 +78,4 @@ char	**ft_split(char *str)
 //y con la funcion ft_strncpy se copia la palbra en 
 //out[k++], desde &str[j], una cantidad dei -j, y el espacio restante se pone NULL.
 //al final se devuelve out 
+//COMPROBADO

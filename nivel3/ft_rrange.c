@@ -43,3 +43,4 @@ int *ft_rrange(int start, int end)
 //Si end es mayor que start, restamos 1 para contar hacia abajo.
 //Devuelve el arreglo:
 //Después de llenar todas las posiciones, devolvemos el puntero al arreglo.
+//COMPROBADO

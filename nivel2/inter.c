@@ -21,11 +21,12 @@ int main(int argc, char **argv)
     }
 
     int i = 0;
-    int j = 0;
+    int j;
     unsigned char seen[256] ={0};
 
     while(argv[1][i])
     {
+        j = 0;
         while(argv[2][j])
         {
             if(argv[1][i] == argv[2][j])
@@ -42,7 +43,7 @@ int main(int argc, char **argv)
         i++;
     }
     write(1, "\n", 1);
-    reurn (0);
+    return (0);
 }
 //se compara si dos cadenas tienen los mismos caracteres en el orden de la primera cadena
 //cuando dos caracteres coinciden se comprueba si ya se ha escrito antes usando seen.
@@ -50,3 +51,4 @@ int main(int argc, char **argv)
 //(un tipo de datos que puede almacenar valores entre 0 y 255).
 //guarda la informacion de los caracteres ya escritos que estan entre esos 256 para evitar duplicados
 //El valor 256 se refiere a la cantidad de posibles valores de un carácter ASCII
+//CORREGIDO Y COMPROBADO

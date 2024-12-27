@@ -15,7 +15,7 @@
 typedef struct s_list
 {
 	int     cont;
-	t_list  *next;
+	struct s_list  *next;// Usa 'struct s_list' en lugar de 't_list'.
 }           t_list;
 
 t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
@@ -42,3 +42,4 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
     return(start);//Esto significa que devolvemos el puntero al primer nodo de la lista ordenada
     //porque hay que devolver un puntero al primer elemento de la lista ordenada
 }
+//COMPROBADO

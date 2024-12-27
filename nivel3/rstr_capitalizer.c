@@ -58,3 +58,4 @@ int main (int argc, char **argv)
 //Esto asegura que i recorra desde el primer argumento (argv[1]) hasta el último (argv[argc - 1]),
 //evitando intentar acceder a argv[argc], porque argv[argc] siempre es NULL
 //porque si hay 3 argc incluyendo el nombre del programa, argv empieza en 0, no en 1.
+//COMPROBADO

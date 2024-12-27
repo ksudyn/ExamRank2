@@ -79,3 +79,4 @@ int main(int argc, char **argv)
 // con ft_putnbr convertimos cada digito en su caracter correspondiente sumando '0' y lo imprimimos en pantalla
 //i es el numero entre 1 y 9 que multiplica a num
 //en el main convertimos num con atoi y ese es el numero que se multiplica
+///comprobado

@@ -38,3 +38,4 @@ int *ft_range(int start, int end)
 //Esta función crea un arreglo de números enteros que empieza desde un número (start) y termina en (end).
 //Si start es más pequeño que end, el arreglo contará hacia arriba (como 1, 2, 3). 
 //Si start es más grande, contará hacia abajo (como 3, 2, 1).
+//COMPROBADO

@@ -44,3 +44,4 @@ void	flood_fill(char **tab, t_point size, t_point begin)
 //(por ejemplo, el carácter original que estamos reemplazando con 'F')
 //Por ejemplo, si estamos buscando llenar las zonas de carácter 'B'
 //y en la posición actual hay un 'A', esta condición será verdadera
+//COMPROBADO
