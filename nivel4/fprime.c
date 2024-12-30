@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -40,7 +39,7 @@ int main(int argc, char **argv)
             i = 1;
         }
     }
-    write(1, "\n", 1);
+    printf("\n");
     return (0);
 }
 //esta funcion toma un número entero positivo
@@ -53,3 +52,5 @@ int main(int argc, char **argv)
 //si los numero a comprobar son iguales hemos terminado
 //si no se escribe * y se dividen los numeros para comprobarlo de nuevo.
 //y se restablece i en 1 antes de empezar para que no de mal el resultado.
+//no se puede usar write, usar printf para el final
+//COMPROBADO

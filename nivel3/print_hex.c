@@ -20,7 +20,7 @@ int	ft_atoi(char *str)
 	while (str[i] != '\0')
 	{
 		n = n * 10;
-		n = n + *str - '0';
+		n = n + str[i] - '0';
 		i++;
 	}
 	return (n);
@@ -51,3 +51,4 @@ int	main(int argc, char **argv)
 // usamo ft_atoi para converir la cadena recibida en numeros entero para trabajar con ellos
 //con el print_hex calculas el numero exadecimal y lo escribimos
 //usamos ambas funciones para que print_ex calcule un numero y no la cadena recibida
+//COMPROBADO

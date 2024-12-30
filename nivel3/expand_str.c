@@ -48,3 +48,4 @@ int main(int argc, char **argv)
 //si hay otro carater comprueba si "space" es = 1 para escribir un '   '
 //si no lo es no lo escribe y luego escribe el caracter corresspondiente
 //avanza en 1 y al final se escribe "\n"
+//COMPROBADO

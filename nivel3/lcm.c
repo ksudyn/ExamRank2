@@ -40,3 +40,4 @@ unsigned int lcm(unsigned int a, unsigned int b)
 //No hay un número fijo de iteraciones; el bucle continuará hasta que se cumpla la condición
 // Si 'n' es divisible tanto por 'a' como por 'b', es el MCM
 // Si no, incrementa 'n' en 1 y vuelve a comprobar
+//COMPROBADO

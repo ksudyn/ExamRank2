@@ -31,4 +31,4 @@ int max(int *tab, unsigned int len)
 //El primer parámetro es un array de enteros (int), y el segundo es el número de elementos en el array.
 //La función devuelve el número más grande encontrado en el array.
 //Si el array está vacío, la función devuelve 0
-//comprobado
+//COMPROBADO

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "ft_list_size.h"
 
 int	ft_list_size(t_list *begin_list)
 {
@@ -26,3 +26,4 @@ int	ft_list_size(t_list *begin_list)
 //en el buce while al comprobar si existe la lista ya dice que al menos a una
 //por eso se suma count y luego se pasa al siguiente nodo
 //esto es como un i++;
+//COMPROBADO

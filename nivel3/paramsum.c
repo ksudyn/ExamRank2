@@ -40,3 +40,4 @@ int main(int argc, char **argv)
 //La función ft_putnbr divide el número en partes más pequeñas hasta que tiene un dígito solo.
 //lo convierte en un carácter sumando '0' para convertirlo en un caracter y lo imprime en la pantalla.
 //Lo hace de manera recursiva (se llama a sí misma) para cada dígito del número.
+//COMPROBADO

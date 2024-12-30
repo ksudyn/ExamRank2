@@ -44,3 +44,4 @@ int main (int argc, char **argv)
 }
 //hay que reemplazar cada caracter alfabetico por el caracter alfabetico opuesto
 //para eso el nuevo caracter se convierte en la suma de 'a' y'z' menos ese carater
+//COMPROBADO

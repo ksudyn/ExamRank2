@@ -44,7 +44,8 @@ int ft_atoi(char *str)
 
     return (sign * result);
 }
-
+//COMPROBADO
+//solo es la funcion
 int main()
 {
     char str1[] = "   -123";
