@@ -56,3 +56,7 @@ int main(int argc, char **argv)
     return (0);
 }
 //COMPROBADO
+//Aqui se escribe una strin al reves añadinedo un espacio entre palabras, pero al final del nuevo strin no
+//La condición if (i >= 0) es más adecuada que que if(i != 0), por que
+//Evalúa correctamente si aún hay más palabras que procesar.
+//Evita añadir un espacio extra al final del resultado.

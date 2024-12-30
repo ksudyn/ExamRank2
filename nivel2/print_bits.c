@@ -24,3 +24,4 @@ void print_bits(unsigned char octet)
 	}
 }
 //La función imprime el valor de un byte en binario
+//COMPROBADO
