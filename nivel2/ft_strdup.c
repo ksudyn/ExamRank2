@@ -37,3 +37,4 @@ char	*ft_strdup(char *src)
 //lo que significa que el espacio de memoria para ella es reservado por la función
 //se crea una nueva direccion de memoria y se reserva memoria suficiente para guardar el contenido de 'src'
 // y luego es un ft_strcpy
+//COMPROBADO

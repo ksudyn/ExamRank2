@@ -76,4 +76,5 @@ int main(int argc, char **argv)
 //se crea result que al principio es 0
 //si num es mayor que 0 entra en el bucle y con is_prime compruebo si el numero es un primo o no
 //si el numero es primo lo suma a result y si no reduce en uno el numero hasta llegar a 0
-//al final put_nbr imprime result en la salida estándar 
+//al final put_nbr imprime result en la salida estándar
+//COMPROBADO
