@@ -20,3 +20,4 @@ unsigned char swap_bits(unsigned char octet)
 //La operación se realiza comparando cada bit correspondiente de los dos operandos usando |
 //Si al menos uno de los bits es 1, el resultado es 1.
 //Si ambos bits son 0, el resultado es 0
+//COMPROBADO
