@@ -45,3 +45,4 @@ int main(int argc, char **argv)
 //excepto la primera.
 //Una cadena en formato snake_case es una cadena donde cada palabra está en minúsculas,
 //separada por un guion bajo "_"
+//COMPROBADO
