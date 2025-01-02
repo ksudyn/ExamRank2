@@ -12,3 +12,4 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+//COMPROBADO

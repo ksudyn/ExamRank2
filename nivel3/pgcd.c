@@ -59,3 +59,4 @@ int main(int argc, char const *argv[])
 // luego usamos atoi para converir la cadena recibida en numeros entero para trabajar con ellos
 //hacemos verificaciones para que sean numeros sin signo
 // luego usamos calcular_mcd para calcular el MCD y mostramos el resultado con printf.
+//COMPROBADO

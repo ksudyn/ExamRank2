@@ -71,7 +71,7 @@ char	**ft_split(char *str)
 	return (out);
 }
 //se ignorad (espacios, tabulaciones, saltos de línea), al encontra un caracter diferente
-//se usa j como puntero de inicio de palabra, se sigue sumando i hastavolver a encontar,
+//se usa j como puntero de inicio de palabra, se sigue sumando i hasta volver a encontar,
 //(espacios, tabulaciones, saltos de línea).
 //se comprueba que haya una palabra si i es mayor que j y usando las direcciones de memoria reservadas
 //anteriormente usamos k como indice para ir en orden y usamos malloc para reservar memoria para esa palabra

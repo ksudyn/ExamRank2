@@ -37,3 +37,4 @@ size_t  ft_strcspn(const char *s, const char *reject)
 // si se llega al final de 'reject' se avanza en 'i' y se resetea j a 0
 //para compararlo con todos los caracteres de 's' dentro de 'j'
 //si al final no se encuentar ningun caracter de 's' dentro de 'reject' se devuelve 'i'
+//COMPROBADO

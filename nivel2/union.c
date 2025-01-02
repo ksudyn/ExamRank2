@@ -49,3 +49,4 @@ int main(int argc, char **argv)
 //y al terminar comprobamos el segundo
 //por que lo que se pide no es comparar los caracteres de ambos argumentos
 //si no escribir una sola vez cada caracter que aparece en los dos argumentos
+//COMPROBADO

@@ -26,3 +26,4 @@ int ft_strcmp(char *s1, char *s2)
 // en el momento en que se diferencian en un caracter se devuelve su diferencia en los valores (ASCII)
 //esto se consigue restando s1 - s2, si s1 es mayo el resultado es positivo y si no es negativo
 //si son iguales el resultado es 0
+//COMPROBADO
