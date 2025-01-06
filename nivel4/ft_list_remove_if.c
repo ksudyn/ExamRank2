@@ -36,3 +36,9 @@ void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 		ft_list_remove_if(&cont->next, data_ref, cmp);
 	}
 }
+//Escribe una función llamada ft_list_remove_if
+//que elimine de la lista pasada cualquier elemento cuyo dato sea "igual" al dato de referencia.
+//La función se declarará de la siguiente manera:
+//void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+//cmp toma dos punteros void* y devuelve 0 cuando ambos parámetros son iguales.
+//el typedef te lo dan

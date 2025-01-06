@@ -28,4 +28,10 @@ void ft_list_foreach(t_list *begin_list, void (*f)(void *))
         begin_list = begin_list->next;
     }
 }
-
+//Escribe una función que reciba una lista y un puntero a función,
+//y aplique esta función a cada elemento de la lista.
+//Debe ser declarada de la siguiente manera:
+//void    ft_list_foreach(t_list *begin_list, void (*f)(void *));
+//La función apuntada por f será utilizada de la siguiente manera:
+//(*f)(list_ptr->data) 
+//el typedef struct te lo entregan
