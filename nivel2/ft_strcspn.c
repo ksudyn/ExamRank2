@@ -29,12 +29,12 @@ size_t  ft_strcspn(const char *s, const char *reject)
     }
     return (i);
 }
-//esta funcion calcula la longitud del segmento inicial de la cadena 's' que no contiene
-//ninguno de los caracteres presentes en la cadena 'reject'
+//esta funcion busca la primera letra de la cadena 's' que tambien esté en la cadena 'reject'
 // en el bucle principal recorremos 's' con 'i' y dentro de ese bucle iniciamos otro
-// donde recorremos 'reject' y dentro comparamos el caracter s[i] con el caracter reject[j]
-//si coinciden se devuelve el 'i' si no se avanza en 'j' hasta llegar al final de 'reject'
-// si se llega al final de 'reject' se avanza en 'i' y se resetea j a 0
-//para compararlo con todos los caracteres de 's' dentro de 'j'
-//si al final no se encuentar ningun caracter de 's' dentro de 'reject' se devuelve 'i'
+// donde recorremos 'reject' con 'j' y dentro comparamos el caracter s[i] con reject[j]
+//si coinciden se devuelve 'i', que es la posicion de s donde coinciden
+// si no, se avanza en 'j' hasta llegar al final de 'reject'
+// si se llega al final de 'reject' se avanza en 'i' y se resetea 'j' a 0
+//para comparar todos los caracteres de 's' con todos los caracteres de 'reject'
+//si al final no se encuentar ningun caracter de 's' dentro de 'reject' se devuelve 'i'.
 //COMPROBADO
