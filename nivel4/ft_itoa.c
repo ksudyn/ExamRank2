@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stdlib.h>//para malloc
 
 int lennbr(int nbr)
 {
@@ -21,7 +21,7 @@ int lennbr(int nbr)
 	i = 0;
 	while (nbr != 0)
 	{
-		nbr /= 10;
+		nbr = nbr / 10;
 		i++;
 	}
 	return (i);
@@ -56,7 +56,7 @@ char *ft_itoa(int nbr)
 	while ((len - 1) >= i)
 	{
 		num[len - 1] = (n % 10) + '0';
-		n /= 10;
+		n = n / 10;
 		len--;
 	}
 
