@@ -21,7 +21,7 @@ size_t ft_strspn(const char *s, const char *accept)
     // Iteramos sobre cada carácter de la cadena s
     while (s[i])
     {
-        j = 0;  // Reiniciamos i para cada nuevo carácter de s
+        j = 0;  // Reiniciamos j para cada nuevo carácter de s
         // Verificamos si el carácter actual de s está en accept
         while (accept[j])
         {
