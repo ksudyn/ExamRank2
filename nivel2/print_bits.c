@@ -24,4 +24,8 @@ void print_bits(unsigned char octet)
 	}
 }
 //La función imprime el valor de un byte en binario
+//octet >> i mueve los bits hacia la derecha tantas veces como indique el valor de i
+//Así, en cada ciclo del while, obtenemos el siguiente bit
+//el operador & con 1 se asegura de que solo obtenemos el bit más a la derecha
+//El + '0' convierte ese bit de número (que es 0 o 1) en un carácter
 //COMPROBADO

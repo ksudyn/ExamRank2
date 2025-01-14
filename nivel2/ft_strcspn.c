@@ -32,7 +32,7 @@ size_t  ft_strcspn(const char *s, const char *reject)
 //esta funcion busca la primera letra de la cadena 's' que tambien esté en la cadena 'reject'
 // en el bucle principal recorremos 's' con 'i' y dentro de ese bucle iniciamos otro
 // donde recorremos 'reject' con 'j' y dentro comparamos el caracter s[i] con reject[j]
-//si coinciden se devuelve 'i', que es la posicion de s donde coinciden
+//si coinciden se devuelve 'i', que es el caracter de s donde coinciden
 // si no, se avanza en 'j' hasta llegar al final de 'reject'
 // si se llega al final de 'reject' se avanza en 'i' y se resetea 'j' a 0
 //para comparar todos los caracteres de 's' con todos los caracteres de 'reject'
