@@ -46,3 +46,5 @@ size_t ft_strspn(const char *s, const char *accept)
 //Si no, retornamos el valor de count, ya que eso indica que hemos encontrado un carácter de s que no pertenece a accept
 //Si encontramos una coincidencia, incrementamos count y avanzamos al siguiente carácter de s con i++
 //y reseteamos i a 0 para empezar accept desde el principio
+//solo cuenta los caracteres consecutivos desde el inicio de s que están en accept
+//tienen que estar en orden en s pero no en accept
