@@ -23,7 +23,7 @@ int	ft_list_size(t_list *begin_list)
 	return count;
 }
 // es un strlen de listas
-//en el buce while al comprobar si existe la lista ya dice que al menos a una
+//en el buce while al comprobar si existe la lista ya dice que al menos hay una
 //por eso se suma count y luego se pasa al siguiente nodo
 //esto es como un i++;
 //COMPROBADO

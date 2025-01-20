@@ -26,20 +26,16 @@ unsigned char reverse_bits(unsigned char octet)
 }
 // la funcion invierte bit a bit y devuelve el resultado
 //res = res por 2 mas resto de octet yy luego octet se divide entre 2
-unsigned char reverse_bits(unsigned char octet)
+unsigned char	reverse_bits(unsigned char octet)
 {
-    unsigned char res = 0;  // Resultado con los bits invertidos
-    int i = 8;              // Total de bits en un byte
-
-    while (i > 0)
-    {
-        res = (res << 1) | (octet & 1); // Desplazamos res y añadimos el bit menos significativo de octet
-        octet >>= 1;                    // Desplazamos octet hacia la derecha para procesar el siguiente bit
-        i--;                            // Reducimos el contador
-    }
-
-    return res;
+	unsigned char res = 0;
+	int i = 0;
+	while(i < 8)
+	{
+		res = res << 1;
+		res = res | (octet & 1);
+		octet = octet >> 1;
+		i++;
+	}
+	return (res);
 }
-//Desplazamiento de bits: Usamos res << 1 para mover los bits existentes de res a la izquierda
-//y octet & 1 para extraer el bit menos significativo de octet.
-//En lugar de dividir octet por 2, usamos octet >>= 1 para mover todos los bits hacia la derecha. Esto es equivalente pero más rápido.

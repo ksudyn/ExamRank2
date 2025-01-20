@@ -14,11 +14,11 @@ void sort_int_tab(int *tab, unsigned int size)
 {
     unsigned int i = 0;
     int temp;
-    int swapped;
+    int cambios;
 
     while (i < size - 1)
     {
-        swapped = 0;
+        cambios = 0;
         unsigned int j = 0;
         
         while (j < size - i - 1)
@@ -28,12 +28,12 @@ void sort_int_tab(int *tab, unsigned int size)
                 temp = tab[j];
                 tab[j] = tab[j + 1];
                 tab[j + 1] = temp;
-                swapped = 1;
+                cambios = 1;
             }
             j++;
         }
 
-        if (!swapped)
+        if (!cambios)
             break;
 
         i++;

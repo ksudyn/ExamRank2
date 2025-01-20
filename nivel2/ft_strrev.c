@@ -37,7 +37,7 @@ char *ft_strrev(char *str)
         j++;
     }
 
-    return str;
+    return (str);
 }
 //es un swap caracter por caracter
 // en el ejemlo "Hola Mundo".

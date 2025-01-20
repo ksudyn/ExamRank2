@@ -44,7 +44,7 @@ int ft_atoi(char *str)
 
 void	ft_putnbr(int nb)
 {
-	if (nb / 10 > 0)
+	if (nb >= 10)
 		ft_putnbr(nb / 10);
 	
     char digit = nb % 10 + '0';
