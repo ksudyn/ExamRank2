@@ -45,7 +45,7 @@ char *ft_itoa(int nbr)
 	}
 
 	len = len + i;
-	num = (char *)malloc((len + 1) * sizeof(char));
+	num = malloc(sizeof(*num) * (len + 1));
 	if (!num)
 		return (NULL);
 

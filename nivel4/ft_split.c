@@ -50,7 +50,9 @@ char	**ft_split(char *str)
 			i++;
 	}
 	
-	char **out = (char **)malloc(sizeof(char *) * (word + 1));
+	char **out;
+	out = malloc(sizeof(*out) * (word + 1));
+
     //reserva memoria para almacenar los punteros a las palabras, no para las palabras mismas
 	i = 0;
 	
@@ -63,7 +65,7 @@ char	**ft_split(char *str)
 			i++;
 		if (i > j)
 		{
-			out[k] = (char *)malloc(sizeof(char) * ((i - j) + 1));
+			out[k] = malloc(sizeof(char) * ((i - j) + 1));
 			ft_strncpy(out[k++], &str[j], i - j);
 		}
 	}
