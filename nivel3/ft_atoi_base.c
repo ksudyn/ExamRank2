@@ -15,7 +15,7 @@ int ft_atoi_base(const char *str, int str_base)
     int result = 0;
     int sign = 1;
     int i = 0;
-    int value;
+    int caracter;
 
     // Manejo del signo
     if (str[i] == '-')
@@ -29,20 +29,20 @@ int ft_atoi_base(const char *str, int str_base)
     {
         // Obtener el valor del carácter actual
         if (str[i] >= '0' && str[i] <= '9')
-            value = str[i] - '0';
+            caracter = str[i] - '0';
         else if (str[i] >= 'a' && str[i] <= 'f')
-            value = str[i] - 'a' + 10;
+            caracter = str[i] - 'a' + 10;
         else if (str[i] >= 'A' && str[i] <= 'F')
-            value = str[i] - 'A' + 10;
+            caracter = str[i] - 'A' + 10;
         else
             break; // Si encontramos un carácter no válido, detenemos el procesamiento
 
         // Verificamos que el valor del carácter sea válido para la base
-        if (value >= str_base)
+        if (caracter >= str_base)
             break; // Si el valor excede la base, detenemos el procesamiento
 
         // Actualizamos el resultado
-        result = result * str_base + value;
+        result = result * str_base + caracter;
 
         // Avanzamos al siguiente carácter
         i++;

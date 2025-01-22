@@ -15,7 +15,7 @@
 size_t ft_strspn(const char *s, const char *accept)
 {
     int count = 0;
-    int i = 0;;
+    int i = 0;
     int j;
 
     // Iteramos sobre cada carácter de la cadena s
