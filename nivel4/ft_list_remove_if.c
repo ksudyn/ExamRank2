@@ -23,17 +23,17 @@ void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
         return;
     }
 
-    t_list *cont = *begin_list;
+    t_list *nodo = *begin_list;
 
-    if(cmp(cont->data, data_ref) == 0)
+    if(cmp(nodo->data, data_ref) == 0)
     {
-		*begin_list = cont->next;
-		free(cont);
+		*begin_list = nodo->next;
+		free(nodo);
 		ft_list_remove_if(begin_list, data_ref, cmp);
 	}
 	else
 	{
-		ft_list_remove_if(&cont->next, data_ref, cmp);
+		ft_list_remove_if(&nodo->next, data_ref, cmp);
 	}
 }
 //Escribe una función llamada ft_list_remove_if
