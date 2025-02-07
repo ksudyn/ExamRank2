@@ -16,8 +16,9 @@ int *ft_rrange(int start, int end)
 {
     int i = 0;
     int len = abs((end - start)) + 1;
-    int *res = (int *)malloc(sizeof(int) * len);
-
+    int *res;
+    
+    res = malloc(sizeof(*res) * len);
     while(i < len)
     {
         res[i] = end;
