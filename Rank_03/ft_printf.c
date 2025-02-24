@@ -31,41 +31,42 @@ int     ft_putstr(char *s)
     return (i);
 }
 
-void	print_hex(unsigned int n, int *count)
+int	print_hex(unsigned int n)
 {
+	int count =  0;
 	char hex_digits[] = "0123456789abcdef";
 
 	if (n >= 16)
-		print_hex(n / 16, count);
-	write(1, &hex_digits[n % 16], 1);
-	(*count)++;
+		count = count + print_hex(n / 16);
+	count = count + write(1, &hex_digits[n % 16], 1);
+
+	return count;
 }
 
-void ft_putnbr(int n, int *count)
+int ft_putnbr(int n)
 {
-    if (n >= 10)
-        ft_putnbr(n / 10, count);
-    char num = (n % 10) + '0';
-    write(1, &num, 1);           
-    (*count)++;
-}
+	int count = 0;
 
-int print_decimal(int number)
-{
-    int count = 0;
+	if( n == -2147483648)
+	{
+		count = count + write(1, "-2147483648", 11);
+		return count;
+	}
 
-    if (number < 0)
+    if (n < 0)
     {
-        write(1, "-", 1);
+        ft_putchar('-');
         count++;
-        ft_putnbr(-number, &count);
+        n = -n;
     }
-    else
-        ft_putnbr(number, &count);
 
-    return count;
+    if (n >= 10)
+        count = count + ft_putnbr(n / 10);
+    char num = (n % 10) + '0';
+    count = count + write(1, &num, 1);
+    
+	return count;
 }
-
 
 int	ft_printf(char *str, ...)
 {
@@ -81,15 +82,17 @@ int	ft_printf(char *str, ...)
 		if (str[i] == '%')
 		{
 			if (str[i + 1] == 'd')
-				count += print_decimal(va_arg(arg, int));
+				count = count + ft_putnbr(va_arg(arg, int));
 			else if (str[i + 1] == 'x')
-				count += print_hex(va_arg(arg, unsigned int), &count);
+				count = count + print_hex(va_arg(arg, unsigned int));
 			else if (str[i + 1] == 's')
-				count += ft_putstr(va_arg(arg, char *));
+				count = count + ft_putstr(va_arg(arg, char *));
+			else
+				count = count + ft_putchar(str[i]);
 			i++;
 		}
 		else
-			count += ft_putchar(str[i]);
+			count = count + ft_putchar(str[i]);
 		i++;
 	}
 	va_end(arg);
