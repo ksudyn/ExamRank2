@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 int	ft_putchar(char c)
 {
@@ -97,4 +98,26 @@ int	ft_printf(char *str, ...)
 	}
 	va_end(arg);
 	return (count);
+}
+
+int main(void)
+{
+    printf("Original: ");
+    printf("Hello %s\n", "toto");
+    ft_printf("ft_printf: ");
+    ft_printf("Hello %s\n", "toto");
+    
+
+    printf("Original: ");
+    printf("Magic %s is %d\n", "number", 42);
+    ft_printf("ft_printf: ");
+    ft_printf("Magic %s is %d\n", "number", 42);
+
+
+    printf("Original: ");
+    printf("Hexadecimal for %d is %x\n", 42, 42);
+    ft_printf("ft_printf: ");
+    ft_printf("Hexadecimal for %d is %x\n", 42, 42);
+
+    return 0;
 }
