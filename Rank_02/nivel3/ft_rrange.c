@@ -12,27 +12,34 @@
 
 #include <stdlib.h>
 
-int *ft_rrange(int start, int end)
+int     *ft_rrange(int start, int end)
 {
-    int i = 0;
-    int len = abs((end - start)) + 1;
     int *res;
-    
-    res = malloc(sizeof(*res) * len);
-    while(i < len)
+    int i;
+    int len;
+    i = 0;
+    len = end - start;
+    if (len < 0)
+        len = -len;
+    res = malloc(sizeof(*res) * (len +1));
+    if (!res)
+        return (0);
+    while (i < len + 1)
     {
-        res[i] = end;
         if (end < start)
         {
+            res[i] = end;
+            i++;
             end++;
         }
         else
         {
-        end--;
+            res[i] = end;
+            i++;
+            end--;
         }
-        i++;
     }
-    return (res);
+return (res);
 }
 //Debe asignar memoria (usando malloc()) para un arreglo de enteros,
 //llenarlo con valores consecutivos que comienzan en end y terminan en start
