@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
+/*
 int ft_strlen(char *str)
 {
 	int len = 0;
@@ -146,7 +146,7 @@ char *get_next_line(int fd)
 #include <stdlib.h>
 #include <fcntl.h>
 #include <stdio.h>
-
+*/
 char	*get_next_line(int fd)
 {
 	char	*ret = malloc(9999);
